@@ -54,7 +54,7 @@ nnoremap [ctrlp]p :<C-u>CtrlP<CR>
 nnoremap [ctrlp]b :<C-u>CtrlPBuffer<CR>
 nnoremap [ctrlp]d :<C-u>CtrlPDir<CR>
 " nnoremap [ctrlp]l :<C-u>CtrlPLine %<CR>
-nnoremap [ctrlp]l :<C-u>CtrlPBufLine<CR>
+nnoremap [ctrlp]l :<C-u>CtrlPLine<CR>
 nnoremap [ctrlp]m :<C-u>CtrlPMRUFiles<CR>
 nnoremap [ctrlp]x :<C-u>CtrlPMixed<CR>
 nnoremap [ctrlp]y :<C-u>CtrlPYankRound<CR>
@@ -120,9 +120,13 @@ augroup END
 nmap <Space>/ <Plug>(hopping-start)
 let g:hopping#keymapping = {
 \   "\<C-n>" : "<Over>(hopping-next)",
+\   "\<C-j>" : "<Over>(hopping-next)",
 \   "\<C-p>" : "<Over>(hopping-prev)",
+\   "\<C-k>" : "<Over>(hopping-prev)",
 \   "\<C-u>" : "<Over>(scroll-u)",
 \   "\<C-d>" : "<Over>(scroll-d)",
+\   "\<C-y>" : "<Over>(scroll-y)",
+\   "\<C-e>" : "<Over>(scroll-e)",
 \}
 
 " ale ----------------------------------------
@@ -152,6 +156,9 @@ map [superleader] [ctrlp]
 map [superleader]<Space> [ctrlp]b
 nmap [superleader]c [ctrlp]x
 nmap [superleader]n [memolist]
+" trial
+nmap [superleader]o :<C-u>/ oldfiles<Home>browse filter /
+" /trial
 nmap [superleader]: q:
 nmap [superleader]w <C-w>
 nmap [superleader]* [quickhl]*

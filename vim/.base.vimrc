@@ -134,20 +134,20 @@ nnoremap Y y$
 nnoremap <silent> ,r :<C-u>set relativenumber!<CR>
 nnoremap <silent> <SPACE>r :<C-u>set relativenumber!<CR>
 
-inoremap () ()<C-g>U<LEFT>
-inoremap ()) ()
-" inoremap ()( ()<C-g>U<LEFT>
-inoremap {} {}<C-g>U<LEFT>
-inoremap {}} {}
-" inoremap {}{ {}<C-g>U<LEFT>
-inoremap [] []<C-g>U<LEFT>
-inoremap []] []
-" inoremap [][ []<C-g>U<LEFT>
-inoremap <>> <><C-g>U<LEFT>
-inoremap <>> <>
-" inoremap <>< <><C-g>U<LEFT>
-" inoremap "" ""<C-g>U<LEFT>
-" inoremap '' ''<C-g>U<LEFT>
+" inoremap () ()<C-g>U<LEFT>
+" inoremap ()) ()
+" " inoremap ()( ()<C-g>U<LEFT>
+" inoremap {} {}<C-g>U<LEFT>
+" inoremap {}} {}
+" " inoremap {}{ {}<C-g>U<LEFT>
+" inoremap [] []<C-g>U<LEFT>
+" inoremap []] []
+" " inoremap [][ []<C-g>U<LEFT>
+" inoremap <>> <><C-g>U<LEFT>
+" inoremap <>> <>
+" " inoremap <>< <><C-g>U<LEFT>
+" " inoremap "" ""<C-g>U<LEFT>
+" " inoremap '' ''<C-g>U<LEFT>
 
 nmap <tab> <C-w>w
 nnoremap + ,
