@@ -70,6 +70,11 @@ Plug 'machakann/vim-sandwich'
 Plug 'osyo-manga/vim-hopping'
 Plug 'w0rp/ale'
 Plug 'LeafCage/yankround.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'digitaltoad/vim-pug'
+
+Plug 'Shougo/context_filetype.vim'
+Plug 'osyo-manga/vim-precious'
 
 " Plug 'justinmk/vim-dirvish'
 " Plug 'thinca/vim-quickrun'

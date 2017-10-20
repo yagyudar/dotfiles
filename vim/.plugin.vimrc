@@ -132,12 +132,54 @@ let g:hopping#keymapping = {
 " ale ----------------------------------------
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'vue': ['stylelint', 'eslint'],
+\   'css': ['stylelint'],
 \}
 let g:ale_sign_error = 'E'
 let g:ale_sign_warning = 'W'
 " let g:ale_sign_column_always = 1
 set signcolumn=yes
+
+
+" context-filetype ------------------------------
+let g:context_filetype#filetypes = {
+\ 'vue' : [
+\   {
+\     'start' : '<script>',
+\     'end' : '</script>',
+\     'filetype' : 'javascript',
+\   },
+\   {
+\     'start' : '<script\s*lang.*ts.*',
+\     'end' : '</script>',
+\     'filetype' : 'typescript',
+\   },
+\   {
+\     'start' : '<style>',
+\     'end' : '</style>',
+\     'filetype' : 'css',
+\   },
+\   {
+\     'start' : '<style\slang*.*sass.*',
+\     'end' : '</style>',
+\     'filetype' : 'sass',
+\   },
+\   {
+\     'start' : '<style\s*lang.*stylus.*',
+\     'end' : '</style>',
+\     'filetype' : 'stylus',
+\   },
+\   {
+\     'start' : '<template>',
+\     'end' : '</template>',
+\     'filetype' : 'html',
+\   },
+\   {
+\     'start' : '<template\slang*.*pug.*',
+\     'end' : '</template>',
+\     'filetype' : 'pug',
+\   },
+\ ]
+\}
 
 " yankround ----------------------------------------
 nmap p <Plug>(yankround-p)

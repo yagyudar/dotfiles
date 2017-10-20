@@ -38,6 +38,7 @@ set noscrollbind
 set directory=$HOME/.vim/swap
 set backupdir=$HOME/.vim/backup
 set undodir=$HOME/.vim/undo
+set fileencodings=utf-8,cp932
 set fileencoding=utf-8
 set fileformats=unix,dos
 set fileformat=unix
@@ -184,7 +185,8 @@ augroup MyVimrc
   " md as markdown, instead of modula2
   autocmd BufNewFile,BufRead *.{md,mkd} set filetype=markdown
   " vue as vue
-  autocmd BufNewFile,BufRead *.vue set filetype=html.vue
+  autocmd BufNewFile,BufRead *.vue set filetype=vue
+  " autocmd BufNewFile,BufRead *.vue set filetype=html.vue
 
   if has('vim_starting')
     set runtimepath+=~/.vim/local/myplugin
