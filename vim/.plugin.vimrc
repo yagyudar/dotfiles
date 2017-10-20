@@ -16,6 +16,16 @@ xmap [quickhl]* <Plug>(quickhl-manual-this)
 nmap [quickhl]# <Plug>(quickhl-manual-this)
 xmap [quickhl]# <Plug>(quickhl-manual-this)
 
+" terminal ------------------------------
+let g:quickhl_manual_enable_at_startup = 1
+
+noremap [terminal] <Nop>
+map ,t [terminal]
+nnoremap <silent> [terminal]c : <C-u>terminal ++curwin ++close<CR>
+nnoremap <silent> [terminal]t : <C-u>terminal ++curwin ++close<CR>
+nnoremap <silent> [terminal]b : <C-u>terminal ++curwin ++close bash<CR>
+nnoremap <silent> [terminal]s : <C-u>terminal ++curwin ++close bash<CR>
+
 " previm ------------------------------
 let g:previm_enable_realtime = 0
 let g:previm_show_header = 0
@@ -200,6 +210,8 @@ nmap [superleader]c [ctrlp]x
 nmap [superleader]n [memolist]
 " trial
 nmap [superleader]o :<C-u>/ oldfiles<Home>browse filter /
+nmap [superleader]s [terminal]s
+nmap [superleader]t [terminal]t
 " /trial
 nmap [superleader]: q:
 nmap [superleader]w <C-w>

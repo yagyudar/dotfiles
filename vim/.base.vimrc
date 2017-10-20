@@ -40,6 +40,7 @@ set backupdir=$HOME/.vim/backup
 set undodir=$HOME/.vim/undo
 set fileencodings=utf-8,cp932
 set fileencoding=utf-8
+set fileencodings=utf-8,cp932
 set fileformats=unix,dos
 set fileformat=unix
 " set statusline=%t\ %m\ %=[%Y\ %{&ff}\ %{&fileencoding}]\ %l/%L\ %p%%
