@@ -54,6 +54,7 @@ set virtualedit+=block "test:矩形ヴィジュアルモードで仮想編集ON
 set grepprg=jvgrep
 set ttyfast
 set ambiwidth=double
+set synmaxcol=200
 
 set breakindent
 " set breakindentopt=shift:1
