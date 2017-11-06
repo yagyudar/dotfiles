@@ -43,7 +43,6 @@ Plug 'kana/vim-submode'
 Plug 'kannokanno/previm', { 'for': 'markdown' }
 Plug 'tyru/open-browser.vim', { 'for': 'markdown' }
 Plug 'haya14busa/vim-asterisk'
-Plug 'haya14busa/incsearch.vim'
 Plug 'h1mesuke/vim-alignta'
 
 " sub

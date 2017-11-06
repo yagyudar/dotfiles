@@ -48,12 +48,6 @@ map * <Plug>(asterisk-z*)
 map # <Plug>(asterisk-z#)
 let g:asterisk#keeppos = 1
 
-" incsearch ------------------------------
-map / <Plug>(incsearch-forward)
-map ? <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-fuzzy-/)
-map g? <Plug>(incsearch-fuzzy-?)
-
 " ctrlp ------------------------------
 nnoremap [ctrlp] <Nop>
 nmap ,p [ctrlp]
@@ -142,10 +136,12 @@ let g:hopping#keymapping = {
 " ale ----------------------------------------
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'typescript': ['eslint'],
 \   'css': ['stylelint'],
 \}
 let g:ale_sign_error = 'E'
 let g:ale_sign_warning = 'W'
+let g:ale_maximum_file_size = 500000
 " let g:ale_sign_column_always = 1
 set signcolumn=yes
 
@@ -159,7 +155,7 @@ let g:context_filetype#filetypes = {
 \     'filetype' : 'javascript',
 \   },
 \   {
-\     'start' : '<script\s*lang.*ts.*',
+\     'start' : '<script\s*lang.*ts.*>',
 \     'end' : '</script>',
 \     'filetype' : 'typescript',
 \   },
@@ -169,12 +165,12 @@ let g:context_filetype#filetypes = {
 \     'filetype' : 'css',
 \   },
 \   {
-\     'start' : '<style\slang*.*sass.*',
+\     'start' : '<style\slang*.*sass.*>',
 \     'end' : '</style>',
 \     'filetype' : 'sass',
 \   },
 \   {
-\     'start' : '<style\s*lang.*stylus.*',
+\     'start' : '<style\s*lang.*stylus.*>',
 \     'end' : '</style>',
 \     'filetype' : 'stylus',
 \   },
@@ -184,12 +180,26 @@ let g:context_filetype#filetypes = {
 \     'filetype' : 'html',
 \   },
 \   {
-\     'start' : '<template\slang*.*pug.*',
+\     'start' : '<template\slang.*pug.*>',
 \     'end' : '</template>',
 \     'filetype' : 'pug',
 \   },
 \ ]
 \}
+
+augroup PreciousSettings
+  autocmd!
+  " ftplugin/sass.vimでsetlocal sw=2されてしまうので、leave時に戻す。
+  " 戻す値は、.base.vimrcで設定している標準のshiftwidthと同じにする。
+  autocmd User PreciousFileTypeLeave_sass :setlocal shiftwidth=4
+
+  " ただし、これだとsassからleaveすると同時に他のfiletypeになったときに
+  " そのfiletypeでshiftwidthを設定したい場合に、上記で上書いてしまう。
+  " この場合は、ここで設定しなおすこと。サンプルを兼ねてsassのとき2にしてみる。
+  " (現実には「sassからsassに移動」なので無意味)
+  autocmd User PreciousFileType_sass :PreciousSetContextLocal shiftwidth=2
+augroup END
+
 
 " yankround ----------------------------------------
 nmap p <Plug>(yankround-p)
