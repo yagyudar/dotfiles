@@ -1,8 +1,5 @@
 " vim:set ts=8 sts=2 sw=2 tw=0:
 
-" vimproc------------------------------
-let g:vimproc#download_windows_dll = 1
-
 " markdown ------------------------------
 let g:vim_markdown_folding_disabled=1
 

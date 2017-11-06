@@ -1,41 +1,10 @@
 " vim:set ts=8 sts=2 sw=2 tw=0:
 
-" unix固有の設定
-
-let s:is_win32 = has('win32')
-let s:is_win64 = has('win64')
-let s:is_cygwin = has('win32unix')
-let s:is_mac = !s:is_win32 && !s:is_win64 && !s:is_cygwin
-      \ && (has('mac') || has('macunix') || has('gui_macvim') ||
-      \   (!isdirectory('/proc') && executable('sw_vers')))
-
-if s:is_win64
-elseif s:is_cygwin
-  let g:vimproc#dll_path=$HOME . '/.vim/plug/plugged/vimproc.vim/lib/vimproc_cygwin.dll'
-elseif s:is_win32
-  let g:vimproc#dll_path=$HOME . '/.vim/plug/plugged/vimproc.vim/lib/vimproc_win32.dll'
-endif
-
-let g:build_vimproc_command=''
-if s:is_win32
-  let g:build_vimproc_command='tools\\update-dll-mingw 32'
-elseif s:is_win64
-  let g:build_vimproc_command='tools\\update-dll-mingw 64'
-elseif s:is_cygwin
-  let g:build_vimproc_command='make -f make_cygwin.mak'
-elseif s:is_mac
-  let g:build_vimproc_command='make -f make_mac.mak'
-else
-  let g:build_vimproc_command='make -f make_unix.mak'
-endif
-
 if has('vim_starting')
   set runtimepath+=~/.vim/plug/vim-plug
 endif
 
 call plug#begin('~/.vim/plug/plugged')
-
-Plug 'Shougo/vimproc.vim', { 'do': g:build_vimproc_command }
 
 " main
 Plug 'ctrlpvim/ctrlp.vim'
