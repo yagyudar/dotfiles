@@ -276,3 +276,11 @@ function! s:Zoom(value)
   let &guifont = l:guifont
 endfunction
 
+" terminal ------------------------------
+noremap [terminal] <Nop>
+map ,t [terminal]
+nnoremap <silent> [terminal]c : <C-u>terminal ++curwin ++close<CR>
+nnoremap <silent> [terminal]t : <C-u>terminal ++curwin ++close<CR>
+nnoremap <silent> [terminal]b : <C-u>terminal ++curwin ++close bash<CR>
+nnoremap <silent> [terminal]s : <C-u>terminal ++curwin ++close bash<CR>
+

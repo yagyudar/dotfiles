@@ -16,16 +16,6 @@ xmap [quickhl]* <Plug>(quickhl-manual-this)
 nmap [quickhl]# <Plug>(quickhl-manual-this)
 xmap [quickhl]# <Plug>(quickhl-manual-this)
 
-" terminal ------------------------------
-let g:quickhl_manual_enable_at_startup = 1
-
-noremap [terminal] <Nop>
-map ,t [terminal]
-nnoremap <silent> [terminal]c : <C-u>terminal ++curwin ++close<CR>
-nnoremap <silent> [terminal]t : <C-u>terminal ++curwin ++close<CR>
-nnoremap <silent> [terminal]b : <C-u>terminal ++curwin ++close bash<CR>
-nnoremap <silent> [terminal]s : <C-u>terminal ++curwin ++close bash<CR>
-
 " previm ------------------------------
 let g:previm_enable_realtime = 0
 let g:previm_show_header = 0
