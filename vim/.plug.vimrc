@@ -32,17 +32,18 @@ Plug 'kana/vim-textobj-jabraces'
 Plug 'kana/vim-textobj-line'
 
 " trial
-" Plug 'cohama/lexima.vim'
 Plug 'cocopon/vaffle.vim'
 Plug 'machakann/vim-sandwich'
-Plug 'osyo-manga/vim-hopping'
 Plug 'w0rp/ale'
+
 Plug 'LeafCage/yankround.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'digitaltoad/vim-pug'
-
 Plug 'Shougo/context_filetype.vim'
 Plug 'osyo-manga/vim-precious'
+" Plug 'posva/vim-vue'
+" Plug 'Quramy/tsuquyomi'
+" Plug 'Quramy/tsuquyomi-vue'
 
 " Plug 'thinca/vim-quickrun'
 " Plug 'thinca/vim-qfreplace'
