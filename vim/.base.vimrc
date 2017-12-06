@@ -156,12 +156,7 @@ nmap <tab> <C-w>w
 "nnoremap - ^
 nnoremap - 0
 nnoremap Y y$
-
-" 矯正
-" nnoremap + ,
-nnoremap ; :
-nnoremap + ;
-" nnoremap : <Nop>
+nnoremap + ,
 
 " 関連付けされたプログラムで開く(Windowsのみ)
 if has("win32")
