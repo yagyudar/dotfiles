@@ -58,6 +58,7 @@ let g:ctrlp_extensions = ['dir', 'mixed']
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:18'
 let g:ctrlp_tilde_homedir=1
 let g:ctrlp_max_files = 20000
+" let g:ctrlp_prompt_mappings = { 'PrtExit()': ['<Esc>', '<C-c>', '<C-g>', '<C-@>'] }
 
 " zenspace(trial) ----------------------------------------
 augroup vimrc-zenspace
@@ -94,6 +95,12 @@ nnoremap <silent> [memolist]m :<C-u>CtrlPMemoList<CR>
 "   autocmd FileType dirvish sort r /[^\/]$/
 " 
 " augroup END
+
+" vaffle ----------------------------------------
+augroup MyVaffleSetting
+  autocmd!
+  autocmd FileType vaffle nmap <buffer> l <CR>
+augroup END
 
 " indent-guides ----------------------------------------
 let g:indent_guides_enable_on_vim_startup = 1
@@ -187,6 +194,11 @@ augroup PreciousSettings
   autocmd User PreciousFileType_sass :PreciousSetContextLocal shiftwidth=2
 augroup END
 
+"vim-vue ----------------------------------------
+" augroup VimVueSettings
+"   autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css.typescript.pug.sass
+"   let g:vue_disable_pre_processors=0
+" augroup END
 
 " yankround ----------------------------------------
 nmap p <Plug>(yankround-p)
@@ -198,12 +210,37 @@ nmap gP <Plug>(yankround-gP)
 nmap <C-p> <Plug>(yankround-prev)
 nmap <C-n> <Plug>(yankround-next)
 
+" tsuquyomi ----------------------------------------
+let g:tsuquyomi_use_local_typescript=1
+let g:tsuquyomi_definition_split=3
+
+" " fzf ----------------------------------------
+" let g:fzf_action = {
+"   \ 'ctrl-t': 'tab split' }
+" command! FZFMru call fzf#run(fzf#wrap({
+"       \  'source':  v:oldfiles,
+"       \  'options': '+s' }))
+" nnoremap [fzf] <Nop>
+" nmap ,f [fzf]
+" nnoremap <silent> [fzf]f :<C-u>FZF<CR>
+" nnoremap <silent> [fzf]m :<C-u>FZFMru<CR>
+
+" edgemotion ----------------------------------------
+map <C-j> <Plug>(edgemotion-j)
+map <C-k> <Plug>(edgemotion-k)
+
+" expand_region ----------------------------------------
+vmap v <Plug>(expand_region_expand)
+vmap V <Plug>(expand_region_shrink)
+
 " superleader ----------------------------------------
 " スペースを便利なリーダーとして使う。
 map <Space> [superleader]
 map [superleader] [ctrlp]
 map [superleader]<Space> [ctrlp]b
 nmap [superleader]c [ctrlp]x
+" nmap [superleader]m [fzf]m
+nmap [superleader]m [ctrlp]m
 nmap [superleader]n [memolist]
 " trial
 nmap [superleader]o :<C-u>/ oldfiles<Home>browse filter /

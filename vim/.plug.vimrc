@@ -20,11 +20,12 @@ Plug 'deris/parajump'
 Plug 'glidenote/memolist.vim'
 Plug 'itchyny/vim-cursorword'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'pocke/accelerated-smooth-scroll'
+" Plug 'pocke/accelerated-smooth-scroll'
 Plug 'sgur/ctrlp-memolist.vim'
 Plug 't9md/vim-quickhl'
 Plug 'thinca/vim-showtime'
 Plug 'thinca/vim-zenspace'
+Plug 'terryma/vim-expand-region'
 
 " Plug 'kana/vim-operator-user'
 Plug 'kana/vim-textobj-user'
@@ -39,11 +40,18 @@ Plug 'w0rp/ale'
 Plug 'LeafCage/yankround.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'digitaltoad/vim-pug'
+
 Plug 'Shougo/context_filetype.vim'
 Plug 'osyo-manga/vim-precious'
-" Plug 'posva/vim-vue'
+" Plug 'posva/vim-vue', { 'for': 'vue' }
 " Plug 'Quramy/tsuquyomi'
-" Plug 'Quramy/tsuquyomi-vue'
+" Plug 'Quramy/tsuquyomi-vue', { 'for': 'vue' }
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+" Plug 'yami-beta/asyncomplete-omni.vim'
+Plug 'haya14busa/vim-edgemotion'
 
 " Plug 'thinca/vim-quickrun'
 " Plug 'thinca/vim-qfreplace'

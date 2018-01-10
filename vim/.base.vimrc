@@ -130,7 +130,7 @@ vnoremap <C-j> <Esc>
 cnoremap <C-j> <Esc>
 nnoremap <silent><SID>(gt) gt
 nnoremap <silent><SID>(gT) gT
-nnoremap <silent><C-j><C-j> :<C-u>call <SID>my_double_esc_function()<CR>
+" nnoremap <silent><C-j><C-j> :<C-u>call <SID>my_double_esc_function()<CR>
 nnoremap <silent>gb :<C-u>bn<CR>
 nnoremap <silent>gB :<C-u>bp<CR>
 nnoremap Y y$
