@@ -29,15 +29,9 @@ mklink .vimrc %CURRENT_PATH%\.vimrc
 cd .vim
 mklink .base.vimrc %CURRENT_PATH%\.base.vimrc
 mklink .default.vimrc %CURRENT_PATH%\.default.vimrc
-mklink .plugin.vimrc %CURRENT_PATH%\.plugin.vimrc
-mklink .plug.vimrc %CURRENT_PATH%\.plug.vimrc
 
-echo "---------------------------------------------"
-echo " vim-plugをインストールします。"
-echo "---------------------------------------------"
-git clone https://github.com/junegunn/vim-plug .vim/plug/vim-plug
-mkdir .vim\plug\vim-plug\autoload
-copy .vim\plug\vim-plug\plug.vim .vim\plug\vim-plug\autoload\plug.vim
+cd ..
+mklink /D volt %CURRENT_PATH%\volt
 
 pause
 
