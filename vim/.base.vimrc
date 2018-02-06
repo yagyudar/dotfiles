@@ -80,7 +80,6 @@ let g:markdown_fenced_languages = [
 \  'js=javascript',
 \  'json=javascript',
 \  'java=java',
-\  'actionscript=actionscript',
 \  'xml',
 \]
 
@@ -122,12 +121,6 @@ nnoremap gL $
 nnoremap gh ^
 nnoremap gH 0
 
-nnoremap <C-h> 0
-nnoremap <C-l> $
-inoremap <C-j> <Esc>
-nnoremap <C-j> <Esc>
-vnoremap <C-j> <Esc>
-cnoremap <C-j> <Esc>
 nnoremap <silent><SID>(gt) gt
 nnoremap <silent><SID>(gT) gT
 " nnoremap <silent><C-j><C-j> :<C-u>call <SID>my_double_esc_function()<CR>
@@ -217,9 +210,6 @@ nnoremap [quickfix]n :<C-u>cn<CR>
 nnoremap [quickfix]p :<C-u>cp<CR>
 autocmd QuickfixCmdPost grep,grepadd if len(getqflist()) != 0 | copen | endif
 
-"Action Script --------------------
-au BufNewFile,BufRead *.as set ft=actionscript
-
 " insertmode時、statuslineの色を変更 ----------
 if !exists('g:hi_insert_statusline')
   let g:hi_insert_statusline = 'highlight StatusLine guifg=white guibg=darkcyan gui=none ctermfg=white ctermbg=darkcyan cterm=none'
@@ -275,6 +265,10 @@ function! s:Zoom(value)
   let l:guifont = substitute(&guifont, ':h\([^:]*\)', ':h' . l:fsize, '')
   let &guifont = l:guifont
 endfunction
+
+" Jq --------------------------------------------------
+" TODO: jq未インストールの場合
+:command! Jq :%!jq '.'
 
 " terminal ------------------------------
 noremap [terminal] <Nop>
