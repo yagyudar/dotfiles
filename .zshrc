@@ -127,7 +127,7 @@ function +vi-svn-color() {
 #     psvar=()
 #     LANG=en_US.UTF-8 vcs_info
 #     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
-# 	PROMPT='[%n@%M %F{cyan}%c%f${psvar}]%(!.#.$) '
+# 	PROMPT='[%n@%m %F{cyan}%c%f${psvar}]%(!.#.$) '
 # }
 
 function _prompt_init() {
@@ -137,7 +137,7 @@ function _prompt_begin() {
     PROMPT="${PROMPT}["
 }
 function _prompt_base() {
-    PROMPT="${PROMPT}%n@%M "
+    PROMPT="${PROMPT}%n@%m "
 }
 function _prompt_vcs_info() {
     psvar=()
