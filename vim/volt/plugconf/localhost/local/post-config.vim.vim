@@ -1,14 +1,5 @@
-function! s:on_load_pre()
+function! s:config()
   " Plugin configuration like the code written in vimrc.
-  augroup MyVaffleSetting
-    autocmd!
-    autocmd FileType vaffle nmap <buffer> l <CR>
-  augroup END
-endfunction
-
-function! s:on_load_post()
-  " Plugin configuration like the code written in vimrc.
-  " This configuration is executed *after* a plugin is loaded.
 endfunction
 
 function! s:loaded_on()

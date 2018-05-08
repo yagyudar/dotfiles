@@ -1,15 +1,21 @@
-function! s:config()
+function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
   let g:ale_linters = {
   \   'javascript': ['eslint'],
-  \   'typescript': ['eslint'],
+  \   'typescript': ['tslint'],
   \   'css': ['stylelint'],
+  \   'vue': ['tslint'],
   \}
   let g:ale_sign_error = 'E'
   let g:ale_sign_warning = 'W'
   let g:ale_maximum_file_size = 500000
   " let g:ale_sign_column_always = 1
   set signcolumn=yes
+endfunction
+
+function! s:on_load_post()
+  " Plugin configuration like the code written in vimrc.
+  " This configuration is executed *after* a plugin is loaded.
 endfunction
 
 function! s:loaded_on()

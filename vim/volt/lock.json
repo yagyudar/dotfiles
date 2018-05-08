@@ -1,157 +1,136 @@
 {
   "version": 2,
-  "trx_id": 59,
   "current_profile_name": "default",
   "repos": [
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/thinca/vim-zenspace",
       "version": "1f620052a7c85752fd06110098383b1f0c564f1c"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/kana/vim-submode",
       "version": "d29de4f55c40a7a03af1d8134453a703d6affbd2"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/kannokanno/previm",
-      "version": "e30032c800ce06e836dda312e8053db0a9287a58"
+      "version": "506dccb2a68af2b20e9ee010df51581f3840d28a"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/tyru/open-browser.vim",
-      "version": "60b22e44fe356179922611ec99830160c1642431"
+      "version": "de4eeb085051e9b56dd5574eba7c7e72feb21246"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/haya14busa/vim-asterisk",
-      "version": "0680b47a8b9e89fe2f7e5a78d142de1c8047bf8c"
+      "version": "1a805e320aea9d671be129b4162ea905a8bc095e"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/h1mesuke/vim-alignta",
       "version": "cb3d593c48d7d3aef829b5aff49ddade24417a9f"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/glidenote/memolist.vim",
       "version": "9e3ec2366890b3667c103a8b5dea9bca86845242"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/itchyny/vim-cursorword",
       "version": "4878d6185b99131c5f610cc6ad0e223439ac4601"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/nathanaelkane/vim-indent-guides",
       "version": "b40687195c01caf40f62d20093296590b48e3a75"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/t9md/vim-quickhl",
       "version": "f843c93a02f86af1568daf44c3acb1a59fc8c76d"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/kana/vim-textobj-user",
       "version": "e231b65797b5765b3ee862d71077e9bd56f3ca3e"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/cocopon/vaffle.vim",
-      "version": "ef2abf328fbc0094069412b8e347da9eb356948c"
+      "version": "14816a8c9389a7db6c122924dc34965545e99506"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/machakann/vim-sandwich",
-      "version": "9ea02aace70d83d994f267fd56c4dcb9a8fea41b"
+      "version": "4679a45801837bfb8727c5460cb07d0fe9aa5677"
     },
     {
       "type": "git",
-      "trx_id": 57,
-      "path": "github.com/w0rp/ale",
-      "version": "89f8d3e456713846d1ebdd934027ae7a910cf5f8"
-    },
-    {
-      "type": "git",
-      "trx_id": 57,
       "path": "github.com/leafgarland/typescript-vim",
-      "version": "04e0d821663365909fecaf1523b9b80b1f539bf8"
+      "version": "e25636b44211a4be7b089bfed7cf09aa7dd086f5"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/digitaltoad/vim-pug",
       "version": "ddc5592f8c36bf4bd915c16b38b8c76292c2b975"
     },
     {
       "type": "git",
-      "trx_id": 57,
-      "path": "github.com/Shougo/context_filetype.vim",
-      "version": "514b50f812904f063736cda3c787db7d9b290151"
-    },
-    {
-      "type": "git",
-      "trx_id": 57,
-      "path": "github.com/osyo-manga/vim-precious",
-      "version": "7a722945e1b90133f5919ed7c98adb17f427c131"
-    },
-    {
-      "type": "git",
-      "trx_id": 57,
       "path": "github.com/cocopon/iceberg.vim",
-      "version": "02c31985747d8944cc2a617c132414d6f78745cd"
+      "version": "51b5c80102d46a4cad8140ea5874fa55feb58806"
     },
     {
       "type": "git",
-      "trx_id": 57,
-      "path": "github.com/rcmdnk/vim-markdown",
-      "version": "7cf3110578a084ddf57d97e9abd1ac3d2f28c63d"
-    },
-    {
-      "type": "git",
-      "trx_id": 57,
       "path": "github.com/ctrlpvim/ctrlp.vim",
-      "version": "35c9b961c916e4370f97cb74a0ba57435a3dbc25"
+      "version": "4b9e7cac612902a25498cca49f13475fe1a821a4"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/sgur/ctrlp-memolist.vim",
       "version": "4bc1818d7a400880e1ffc3fd2720d8660bccbf95"
     },
     {
       "type": "git",
-      "trx_id": 57,
       "path": "github.com/LeafCage/yankround.vim",
       "version": "9dca96ed35b09de9fe5474de40da323d75fa3204"
     },
     {
       "type": "static",
-      "trx_id": 33,
       "path": "localhost/local/post-config",
       "version": ""
     },
     {
       "type": "git",
-      "trx_id": 58,
       "path": "github.com/gko/vim-coloresque",
       "version": "0c21b1469993e610600e88e734ffe90b9c10a514"
+    },
+    {
+      "type": "git",
+      "path": "github.com/posva/vim-vue",
+      "version": "58d8de76b08ba701e643bd87437a7f25624a2388"
+    },
+    {
+      "type": "git",
+      "path": "github.com/Quramy/tsuquyomi",
+      "version": "94f10d312134fc59b53b2e821d3315320f694cf0"
+    },
+    {
+      "type": "git",
+      "path": "github.com/Quramy/tsuquyomi-vue",
+      "version": "60c6f47dcb0491d619cf642bfd4f39610e9b500c"
+    },
+    {
+      "type": "git",
+      "path": "github.com/Quramy/vim-js-pretty-template",
+      "version": "dcdfe453a2ce7de4a315543a4b1802364fa4734e"
+    },
+    {
+      "type": "git",
+      "path": "github.com/plasticboy/vim-markdown",
+      "version": "8ace66328c7a2f416671b863cd842712d36c53cc"
     }
   ],
   "profiles": [
@@ -171,18 +150,43 @@
         "github.com/kana/vim-textobj-user",
         "github.com/cocopon/vaffle.vim",
         "github.com/machakann/vim-sandwich",
-        "github.com/w0rp/ale",
         "github.com/leafgarland/typescript-vim",
         "github.com/digitaltoad/vim-pug",
-        "github.com/Shougo/context_filetype.vim",
-        "github.com/osyo-manga/vim-precious",
         "github.com/cocopon/iceberg.vim",
         "github.com/ctrlpvim/ctrlp.vim",
         "github.com/sgur/ctrlp-memolist.vim",
         "github.com/LeafCage/yankround.vim",
         "localhost/local/post-config",
-        "github.com/rcmdnk/vim-markdown",
-        "github.com/gko/vim-coloresque"
+        "github.com/gko/vim-coloresque",
+        "github.com/Quramy/vim-js-pretty-template",
+        "github.com/posva/vim-vue",
+        "github.com/plasticboy/vim-markdown"
+      ]
+    },
+    {
+      "name": "trial",
+      "repos_path": [
+        "github.com/kana/vim-submode",
+        "github.com/cocopon/vaffle.vim",
+        "github.com/leafgarland/typescript-vim",
+        "github.com/digitaltoad/vim-pug",
+        "github.com/cocopon/iceberg.vim",
+        "github.com/ctrlpvim/ctrlp.vim",
+        "github.com/posva/vim-vue",
+        "github.com/thinca/vim-zenspace",
+        "github.com/sgur/ctrlp-memolist.vim",
+        "github.com/machakann/vim-sandwich",
+        "github.com/LeafCage/yankround.vim",
+        "github.com/gko/vim-coloresque",
+        "github.com/glidenote/memolist.vim",
+        "github.com/h1mesuke/vim-alignta",
+        "github.com/nathanaelkane/vim-indent-guides",
+        "github.com/t9md/vim-quickhl",
+        "github.com/itchyny/vim-cursorword",
+        "github.com/haya14busa/vim-asterisk",
+        "github.com/kannokanno/previm",
+        "github.com/tyru/open-browser.vim",
+        "github.com/kana/vim-textobj-user"
       ]
     }
   ]

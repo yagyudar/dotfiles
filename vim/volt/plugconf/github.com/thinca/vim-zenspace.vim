@@ -1,9 +1,14 @@
-function! s:config()
+function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
   augroup vimrc-zenspace
     autocmd!
     autocmd ColorScheme * highlight ZenSpace cterm=undercurl ctermbg=NONE ctermfg=60 gui=undercurl guibg=NONE guifg=#5F5F87
   augroup END
+endfunction
+
+function! s:on_load_post()
+  " Plugin configuration like the code written in vimrc.
+  " This configuration is executed *after* a plugin is loaded.
 endfunction
 
 function! s:loaded_on()

@@ -1,3 +1,8 @@
+
+fpath=(~/tools/cd-bookmark(N-/) $fpath)
+autoload -Uz cd-bookmark
+alias cf='cd-bookmark'
+
 # 補完機能を有効にする
 autoload -Uz compinit
 compinit -C

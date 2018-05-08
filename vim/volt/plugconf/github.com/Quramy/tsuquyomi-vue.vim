@@ -1,9 +1,6 @@
 function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
-  augroup MyVaffleSetting
-    autocmd!
-    autocmd FileType vaffle nmap <buffer> l <CR>
-  augroup END
+  " This configuration is executed *before* a plugin is loaded.
 endfunction
 
 function! s:on_load_post()
@@ -34,5 +31,5 @@ function! s:depends()
   " (the argument of :return must be list literal, and the elements are string)
   " e.g. return ['github.com/tyru/open-browser.vim']
 
-  return []
+  return ['github.com/Quramy/tsuquyomi']
 endfunction

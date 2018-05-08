@@ -1,9 +1,5 @@
 function! s:on_load_pre()
-  " Plugin configuration like the code written in vimrc.
-  augroup MyVaffleSetting
-    autocmd!
-    autocmd FileType vaffle nmap <buffer> l <CR>
-  augroup END
+  let g:vim_markdown_folding_disabled = 1
 endfunction
 
 function! s:on_load_post()
