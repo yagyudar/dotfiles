@@ -1,0 +1,45 @@
+{
+    "title": "Escと<C-[>で[英数]も送信する",
+    "rules": [{
+        "description": "Add Esc Eisuu",
+        "manipulators": [{
+            "conditions": [{
+                "type": "input_source_if",
+                "input_sources": [{
+                    "language": "ja"
+                }]
+            }],
+            "from": {
+                "key_code": "escape",
+                "modifiers": {
+                    "optional": [ "any" ]
+                }
+            },
+            "to": [{
+                "key_code": "japanese_eisuu"
+            }, {
+                "key_code": "escape"
+            }],
+            "type": "basic"
+        }, {
+            "conditions": [{
+                "type": "input_source_if",
+                "input_sources": [{
+                    "language": "ja"
+                }]
+            }],
+            "from": {
+                "key_code": "close_bracket",
+                "modifiers": {
+                    "mandatory": [ "left_control" ]
+                }
+            },
+            "to": [{
+                "key_code": "japanese_eisuu"
+            }, {
+                "key_code": "escape"
+            }],
+            "type": "basic"
+        }]
+    }]
+}
