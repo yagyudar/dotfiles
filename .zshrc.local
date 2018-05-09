@@ -1,0 +1,33 @@
+
+export http_proxy="http://www-gw:80"
+export https_proxy="http://www-gw:80"
+
+# Docker (大文字の必要がある)
+export HTTP_PROXY="http://xxxx.co.jp:80"
+export HTTPS_PROXY="http://xxxx.co.jp:80"
+export NO_PROXY="192.168.99.100,localhost,127.0.0.1,.sock"
+# Docker
+
+# export DOCKER_TLS_VERIFY="1"
+# export DOCKER_HOST="tcp://192.168.99.100:2376"
+# export DOCKER_CERT_PATH="/Users/yagyudar/.docker/machine/machines/default"
+# export DOCKER_MACHINE_NAME="default"
+#
+# Run this command to configure your shell:
+# eval $(docker-machine env)
+
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/var/nodebrew/current/bin:$PATH
+export NODEBREW_ROOT=/usr/local/var/nodebrew
+
+export PATH=$HOME/tools/bin:$PATH
+
+# pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+export PYENV_ROOT=$HOME/.pyenv
+
+# fpath=(~/tools/cd-bookmark(N-/) $fpath)
+# autoload -Uz cd-bookmark
+# alias cf='cd-bookmark'
