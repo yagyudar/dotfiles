@@ -1,9 +1,9 @@
-function! s:config()
+function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
   nnoremap [ctrlp] <Nop>
   nmap ,p [ctrlp]
   " uiki
-  nnoremap <expr>[ctrlp]i ':<C-u>CtrlP '. g:unite_uiki_path . '<CR>'
+  nnoremap <expr>[ctrlp]i ':<C-u>CtrlP '. g:memolist_path . '<CR>'
   nnoremap [ctrlp]p :<C-u>CtrlP<CR>
   nnoremap [ctrlp]b :<C-u>CtrlPBuffer<CR>
   nnoremap [ctrlp]d :<C-u>CtrlPDir<CR>
@@ -22,6 +22,11 @@ function! s:config()
   let g:ctrlp_tilde_homedir=1
   let g:ctrlp_max_files = 20000
   " let g:ctrlp_prompt_mappings = { 'PrtExit()': ['<Esc>', '<C-c>', '<C-g>', '<C-@>'] }
+endfunction
+
+function! s:on_load_post()
+  " Plugin configuration like the code written in vimrc.
+  " This configuration is executed *after* a plugin is loaded.
 endfunction
 
 function! s:loaded_on()

@@ -1,10 +1,15 @@
-function! s:config()
+function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
   let g:memolist_memo_suffix = "uiki"
   nnoremap [memolist] <Nop>
   nmap ,m [memolist]
   nnoremap <silent> [memolist]n :<C-u>MemoNew<CR>
   nnoremap <silent> [memolist]m :<C-u>CtrlPMemoList<CR>
+endfunction
+
+function! s:on_load_post()
+  " Plugin configuration like the code written in vimrc.
+  " This configuration is executed *after* a plugin is loaded.
 endfunction
 
 function! s:loaded_on()

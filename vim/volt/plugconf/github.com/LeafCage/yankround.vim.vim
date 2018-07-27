@@ -1,4 +1,4 @@
-function! s:config()
+function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
   nmap p <Plug>(yankround-p)
   xmap p <Plug>(yankround-p)
@@ -8,6 +8,11 @@ function! s:config()
   nmap gP <Plug>(yankround-gP)
   nmap <C-p> <Plug>(yankround-prev)
   nmap <C-n> <Plug>(yankround-next)
+endfunction
+
+function! s:on_load_post()
+  " Plugin configuration like the code written in vimrc.
+  " This configuration is executed *after* a plugin is loaded.
 endfunction
 
 function! s:loaded_on()

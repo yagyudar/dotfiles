@@ -1,6 +1,15 @@
 function! s:on_load_pre()
-  " Plugin configuration like the code written in vimrc.
-  " This configuration is executed *before* a plugin is loaded.
+  nnoremap [fzf] <Nop>
+  nmap ,f [fzf]
+  nnoremap <silent> [fzf]f :call fzf#vim#files('', 0)<CR>
+  nnoremap <silent> [fzf]g :call fzf#vim#gitfiles('', 0)<CR>
+  nnoremap <silent> [fzf]b :call fzf#vim#buffers('', 0)<CR>
+  nnoremap <silent> [fzf]a :call fzf#vim#ag('', 0)<CR>
+  nnoremap <silent> [fzf]h :call fzf#vim#history(0)<CR>
+  nnoremap <silent> [fzf]m :call fzf#vim#history(0)<CR>
+  nnoremap <silent> [fzf]: :call fzf#vim#command_history(0)<CR>
+  nnoremap <silent> [fzf]/ :call fzf#vim#search_history(0)<CR>
+  nnoremap <silent> [fzf]' :call fzf#vim#marks(0)<CR>
 endfunction
 
 function! s:on_load_post()

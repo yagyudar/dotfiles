@@ -1,4 +1,4 @@
-function! s:config()
+function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
   let g:quickhl_manual_enable_at_startup = 1
   noremap [quickhl] <Nop>
@@ -7,6 +7,11 @@ function! s:config()
   xmap [quickhl]* <Plug>(quickhl-manual-this)
   nmap [quickhl]# <Plug>(quickhl-manual-this)
   xmap [quickhl]# <Plug>(quickhl-manual-this)
+endfunction
+
+function! s:on_load_post()
+  " Plugin configuration like the code written in vimrc.
+  " This configuration is executed *after* a plugin is loaded.
 endfunction
 
 function! s:loaded_on()

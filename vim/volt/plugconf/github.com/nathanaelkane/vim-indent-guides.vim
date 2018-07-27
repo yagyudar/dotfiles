@@ -1,4 +1,4 @@
-function! s:config()
+function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
   let g:indent_guides_enable_on_vim_startup = 1
   " let g:indent_guides_color_change_percent = 5
@@ -9,6 +9,11 @@ function! s:config()
     autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 guifg=#303030 ctermbg=235 ctermfg=236
     autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#1C1C1C guifg=#303030 ctermbg=234 ctermfg=236
   augroup END
+endfunction
+
+function! s:on_load_post()
+  " Plugin configuration like the code written in vimrc.
+  " This configuration is executed *after* a plugin is loaded.
 endfunction
 
 function! s:loaded_on()

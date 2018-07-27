@@ -1,4 +1,4 @@
-function! s:config()
+function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
   nnoremap s <Nop>
   nnoremap sa <Nop>
@@ -6,6 +6,11 @@ function! s:config()
   nmap sa <Plug>(operator-sandwich-add)a
   xmap s <Plug>(operator-sandwich-add)
   xmap sa <Plug>(operator-sandwich-add)a
+endfunction
+
+function! s:on_load_post()
+  " Plugin configuration like the code written in vimrc.
+  " This configuration is executed *after* a plugin is loaded.
 endfunction
 
 function! s:loaded_on()

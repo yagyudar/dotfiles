@@ -2,7 +2,7 @@
 
 " gvimで'ja'となっていてPlugUpdate等のときにperlのwarningが出ていたので、
 " 試しにこのように変えてみる。
-let $LANG='ja_JP.UTF-8'
+" let $LANG='ja_JP.UTF-8'
 
 let mapleader='\'
 
@@ -88,7 +88,8 @@ aug CD
   au!
   " vimfilerを除外する
   " au BufEnter * if expand("%:p:h:t") != "vimfiler" | execute ":lcd " . expand("%:p:h") | endif
-  au BufEnter * if expand("%:p:h:t") != "vimfiler" && expand("%:p") !~ '://' | execute ":lcd " . expand("%:p:h") | endif
+  " au BufEnter * if expand("%:p:h:t") != "vimfiler" && expand("%:p") !~ '://' | execute ":lcd " . expand("%:p:h") | endif
+  au BufEnter * if  expand("%:p") !~ '\(://\|^!\)' | execute ":lcd " . expand("%:p:h") | endif
 aug END
 
 " unix固有の設定
@@ -277,4 +278,6 @@ nnoremap <silent> [terminal]c : <C-u>terminal ++curwin ++close<CR>
 nnoremap <silent> [terminal]t : <C-u>terminal ++curwin ++close<CR>
 nnoremap <silent> [terminal]b : <C-u>terminal ++curwin ++close bash<CR>
 nnoremap <silent> [terminal]s : <C-u>terminal ++curwin ++close bash<CR>
+tnoremap <C-w><Esc> <C-w>N
+tnoremap <Esc><Esc> <C-w>N
 

@@ -1,4 +1,4 @@
-function! s:config()
+function! s:on_load_pre()
   """"""""""""""""""""""""""""""
   " submode
   """"""""""""""""""""""""""""""
@@ -35,8 +35,8 @@ function! s:config()
   map <Space> [superleader]
   map [superleader] [ctrlp]
   map [superleader]<Space> [ctrlp]b
+  nmap [superleader]b [ctrlp]b
   nmap [superleader]c [ctrlp]x
-  " nmap [superleader]m [fzf]m
   nmap [superleader]m [ctrlp]m
   nmap [superleader]n [memolist]
   nmap [superleader]s [terminal]s
@@ -48,6 +48,11 @@ function! s:config()
   nmap [superleader]# [quickhl]#
   xmap [superleader]# [quickhl]#
   """"""""""""""""""""""""""""""
+endfunction
+
+function! s:on_load_post()
+  " Plugin configuration like the code written in vimrc.
+  " This configuration is executed *after* a plugin is loaded.
 endfunction
 
 function! s:loaded_on()
