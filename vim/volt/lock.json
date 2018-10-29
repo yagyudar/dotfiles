@@ -30,7 +30,7 @@
     {
       "type": "git",
       "path": "github.com/glidenote/memolist.vim",
-      "version": "81533aef66b09441c6fe1d83caa6d32cb6e434b6"
+      "version": "267bc366507d586b54bdb4a1d780c807ef575c6e"
     },
     {
       "type": "git",
@@ -55,7 +55,7 @@
     {
       "type": "git",
       "path": "github.com/cocopon/vaffle.vim",
-      "version": "7992dbcb9bec55daa4759df2362a5092ec2dbb4b"
+      "version": "07647a485d9516033fc74e6c5f27b40cc5e4c3db"
     },
     {
       "type": "git",
@@ -65,22 +65,22 @@
     {
       "type": "git",
       "path": "github.com/w0rp/ale",
-      "version": "95be2bf1ff9221eb74dc028ca616412305b2bc85"
+      "version": "2000436dfd7a25a8e9f66788c94bfb4512adda98"
     },
     {
       "type": "git",
       "path": "github.com/leafgarland/typescript-vim",
-      "version": "e25636b44211a4be7b089bfed7cf09aa7dd086f5"
+      "version": "0e9d92eead2df21abe342c4341c55536dd36b0af"
     },
     {
       "type": "git",
       "path": "github.com/digitaltoad/vim-pug",
-      "version": "ddc5592f8c36bf4bd915c16b38b8c76292c2b975"
+      "version": "3f341b48e46a84891e19d449a5e336bcfc5a57a0"
     },
     {
       "type": "git",
       "path": "github.com/Shougo/context_filetype.vim",
-      "version": "9ed76080795ef76f52b8c9ae4432df7cd81abc5a"
+      "version": "5392e3f0f3ff82b7149818a5700680f4bbcfea45"
     },
     {
       "type": "git",
@@ -90,12 +90,12 @@
     {
       "type": "git",
       "path": "github.com/cocopon/iceberg.vim",
-      "version": "b68890744dfe12673cef977f6f6d227fd949ae45"
+      "version": "0a18b0fbfdcdace35ee7ff4397ab6932d6dae1da"
     },
     {
       "type": "git",
       "path": "github.com/ctrlpvim/ctrlp.vim",
-      "version": "43cc73b8e7d4ab45f17118573eb81fd45704b989"
+      "version": "ebc568c3992d9002d1d35b85737dfa0d9ce70d9f"
     },
     {
       "type": "git",
@@ -125,7 +125,7 @@
     {
       "type": "git",
       "path": "github.com/previm/previm",
-      "version": "6ab010bd5a76afcd3772559bc78e76edcd0107d0"
+      "version": "a7548557f3e9bb90ba1697f059c5b6895ff13454"
     }
   ],
   "profiles": [
