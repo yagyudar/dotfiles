@@ -63,6 +63,59 @@ if 1 && (!exists('g:no_vimrc_example') || g:no_vimrc_example == 0)
 endif
 
 "---------------------------------------------------------------------------
+" 検索の挙動に関する設定:
+"
+" 検索時に大文字小文字を無視 (noignorecase:無視しない)
+set ignorecase
+" 大文字小文字の両方が含まれている場合は大文字小文字を区別
+set smartcase
+
+"---------------------------------------------------------------------------
+" 編集に関する設定:
+"
+" タブの画面上での幅
+set tabstop=4
+" タブをスペースに展開しない (expandtab:展開する)
+set noexpandtab
+"set expandtab
+" 自動的にインデントする (noautoindent:インデントしない)
+set autoindent
+" バックスペースでインデントや改行を削除できるようにする
+set backspace=indent,eol,start
+" 検索時にファイルの最後まで行ったら最初に戻る (nowrapscan:戻らない)
+set wrapscan
+" 括弧入力時に対応する括弧を表示 (noshowmatch:表示しない)
+set showmatch
+" コマンドライン補完するときに強化されたものを使う(参照 :help wildmenu)
+set wildmenu
+" テキスト挿入中の自動折り返しを日本語に対応させる
+set formatoptions+=mM
+
+"---------------------------------------------------------------------------
+" GUI固有ではない画面表示の設定:
+"
+" 相対行番号を表示 (number:表示)
+set number
+" ルーラーを表示 (noruler:非表示)
+set ruler
+" タブや改行を表示 (nolist:非表示)
+set list
+" どの文字でタブや改行を表示するかを設定
+"set listchars=tab:>-,extends:<,trail:-,eol:<
+"set listchars=tab:^\ ,eol:_
+set listchars=tab:>\ ,trail:-
+" 長い行を折り返して表示 (nowrap:折り返さない)
+set wrap
+" 常にステータス行を表示 (詳細は:he laststatus)
+set laststatus=2
+" コマンドラインの高さ (Windows用gvim使用時はgvimrcを編集すること)
+set cmdheight=2
+" コマンドをステータス行に表示
+set showcmd
+" タイトルを表示
+set title
+
+"---------------------------------------------------------------------------
 " ファイル名に大文字小文字の区別がないシステム用の設定:
 "   (例: DOS/Windows/MacOS)
 "
@@ -122,16 +175,5 @@ if exists('g:no_vimrc_example') && g:no_vimrc_example == 1
   silent! source $VIMRUNTIME/vimrc_example.vim
 endif
 
-" unix固有の設定
-if has("win64") " 64bit_windows固有の設定
-elseif has("win32unix") " Cygwin固有の設定
-  "let &t_ti .= "\e[1 q"  " 端末を termcap モードにする
-  let &t_SI .= "\e[5 q"  " 挿入モード開始(バー型のカーソル)
-  let &t_EI .= "\e[1 q"  " 挿入モード終了(ブロック型カーソル)
-  "let &t_te .= "\e[0 q"  " termcap モードから抜ける
-endif
-
-" 関連付けされたプログラムで開く(Windowsのみ)
-if has("win32")
-  :command! Open :!start cmd /c %<CR>
-endif
+"プラグインを有効にする
+filetype plugin indent on 
