@@ -18,7 +18,6 @@ mkdir .vim
 mkdir .vim\backup
 mkdir .vim\swap
 mkdir .vim\undo
-mkdir .vim\plug
 mkdir .vim\uiki
 
 echo "---------------------------------------------"
