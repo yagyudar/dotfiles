@@ -130,7 +130,6 @@ nnoremap <expr>l  foldclosed('.') != -1 ? 'zo' : 'l'
 "
 augroup MyVimrc
   autocmd!
-  autocmd FileType ref-webdict nnoremap <buffer> q <C-w>c
   autocmd FileType help nnoremap <buffer> q <C-w>c
   autocmd FileType qf nnoremap <buffer> q <C-w>c
   autocmd FileType qf nnoremap <buffer> p <CR>zz<C-w>p
@@ -153,7 +152,10 @@ let g:markdown_fenced_languages = [
 \  'xml',
 \]
 
-" quickfixの呼び出しなど
+"---------------------------------------------------------------------------
+" vim機能のショートカット
+
+" quickfix
 map ,c [quickfix]
 nnoremap [quickfix]c :<C-u>copen<CR>
 nnoremap [quickfix]o :<C-u>copen<CR>
@@ -161,7 +163,7 @@ nnoremap [quickfix]n :<C-u>cn<CR>
 nnoremap [quickfix]p :<C-u>cp<CR>
 autocmd QuickfixCmdPost grep,grepadd if len(getqflist()) != 0 | copen | endif
 
-" terminalの呼び出しなど
+" terminal
 noremap [terminal] <Nop>
 map ,t [terminal]
 nnoremap <silent> [terminal]c : <C-u>terminal ++curwin ++close<CR>
@@ -172,9 +174,17 @@ tnoremap <C-w><Esc> <C-w>N
 tnoremap <Esc><Esc> <C-w>N
 
 "---------------------------------------------------------------------------
-" プラグイン的な動作
+" 見栄えの調整
 "
+aug BREAK_INDENT
+  au!
+  au BufEnter * hi NonText ctermfg=60 guifg=#5F5F87
+aug END
+
+"---------------------------------------------------------------------------
+" プラグイン的な動作
 " エスケープ二つでいろいろクリアする
+"
 nnoremap <silent><Esc><Esc> :<C-u>call <SID>my_double_esc_function()<CR>
 function! s:my_double_esc_function()
   QuickhlManualReset
@@ -182,22 +192,19 @@ function! s:my_double_esc_function()
   set norelativenumber
 endfunction
 
-" 見栄えの調整
-aug BREAK_INDENT
-  au!
-  au BufEnter * hi NonText ctermfg=60 guifg=#5F5F87
-aug END
-
+"---------------------------------------------------------------------------
+" プラグイン的な動作
 " AutoChangeDirectory
+"
 aug CD
   au!
-  " vimfilerを除外する
-  " au BufEnter * if expand("%:p:h:t") != "vimfiler" | execute ":lcd " . expand("%:p:h") | endif
-  " au BufEnter * if expand("%:p:h:t") != "vimfiler" && expand("%:p") !~ '://' | execute ":lcd " . expand("%:p:h") | endif
   au BufEnter * if  expand("%:p") !~ '\(://\|^!\)' | execute ":lcd " . expand("%:p:h") | endif
 aug END
 
+"---------------------------------------------------------------------------
+" プラグイン的な動作
 " insertmode時、statuslineの色を変更
+"
 if !exists('g:hi_insert_statusline')
   let g:hi_insert_statusline = 'highlight StatusLine guifg=white guibg=darkcyan gui=none ctermfg=white ctermbg=darkcyan cterm=none'
 endif
