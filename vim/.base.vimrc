@@ -55,12 +55,10 @@ set noscrollbind
 set directory=$HOME/.vim/swap
 set backupdir=$HOME/.vim/backup
 set undodir=$HOME/.vim/undo
-set fileencodings=utf-8,cp932
 set fileencoding=utf-8
 set fileencodings=utf-8,cp932
 set fileformats=unix,dos
 set fileformat=unix
-" set statusline=%t\ %m\ %=[%Y\ %{&ff}\ %{&fileencoding}]\ %l/%L\ %p%%
 set statusline=[%{mode()}]\ %t\ %m\ %=[%Y\ %{&ff}\ %{&fileencoding}]\ %l/%L\ %p%%
 set splitbelow
 set splitright
@@ -79,6 +77,7 @@ set cmdwinheight=6
 set cursorline
 silent! set nofixendofline
 
+"---------------------------------------------------------------------------
 " お試し中:
 " 20140404 crontab -e で編集できない現象への対応
 set backupskip=/tmp/*,/private/tmp/*
@@ -86,9 +85,6 @@ set backupskip=/tmp/*,/private/tmp/*
 set timeout timeoutlen=1000 ttimeoutlen=30
 " trial: refs: http://qiita.com/yohawing/items/d04408a15f2f13176961
 set wildignore+=*.exe,*.dll,*.so,*.bin,*.class,*.jar,*.zip,*.jpg,*.jpeg,*.gif,*.png
-" ctags使ってみる
-set tags+=tags;
-set tags+=$HOME/.tags/tags
 
 "---------------------------------------------------------------------------
 " map
@@ -97,7 +93,6 @@ nmap ,w <C-w>
 nmap <tab> <C-w>w
 "nnoremap - ^
 nnoremap - 0
-nnoremap Y y$
 nnoremap + ,
 nnoremap gl $
 nnoremap gL $
@@ -117,13 +112,6 @@ nnoremap Z zM
 vnoremap z zf
 " l で折りたたみを開く
 nnoremap <expr>l  foldclosed('.') != -1 ? 'zo' : 'l'
-
-" nnoremap <silent><SID>(gt) gt
-" nnoremap <silent><SID>(gT) gT
-" nnoremap <silent>gb :<C-u>bn<CR>
-" nnoremap <silent>gB :<C-u>bp<CR>
-" nnoremap <silent> ,r :<C-u>set relativenumber!<CR>
-" nnoremap <silent> <SPACE>r :<C-u>set relativenumber!<CR>
 
 "---------------------------------------------------------------------------
 " ファイルタイプごとの設定
