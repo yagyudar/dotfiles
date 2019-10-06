@@ -15,12 +15,12 @@
     {
       "type": "git",
       "path": "github.com/tyru/open-browser.vim",
-      "version": "de4eeb085051e9b56dd5574eba7c7e72feb21246"
+      "version": "b900ff9d39bb36891704bd0fe76737ee3a7ac2b9"
     },
     {
       "type": "git",
       "path": "github.com/haya14busa/vim-asterisk",
-      "version": "1a805e320aea9d671be129b4162ea905a8bc095e"
+      "version": "7cf0d8f379babbdbf538aefe3af444ac4ba21dce"
     },
     {
       "type": "git",
@@ -30,12 +30,12 @@
     {
       "type": "git",
       "path": "github.com/glidenote/memolist.vim",
-      "version": "267bc366507d586b54bdb4a1d780c807ef575c6e"
+      "version": "7c4712562bae523b90b82a46b8975ed41460585f"
     },
     {
       "type": "git",
       "path": "github.com/itchyny/vim-cursorword",
-      "version": "4878d6185b99131c5f610cc6ad0e223439ac4601"
+      "version": "c35c5e686769db02bb9ccf30cc21fc13786f7f14"
     },
     {
       "type": "git",
@@ -45,57 +45,57 @@
     {
       "type": "git",
       "path": "github.com/t9md/vim-quickhl",
-      "version": "f843c93a02f86af1568daf44c3acb1a59fc8c76d"
+      "version": "c6031afb874cea4fb7796be6a120624d0e073d65"
     },
     {
       "type": "git",
       "path": "github.com/kana/vim-textobj-user",
-      "version": "e231b65797b5765b3ee862d71077e9bd56f3ca3e"
+      "version": "074ce2575543f790290b189860597a3dcac1f79d"
     },
     {
       "type": "git",
       "path": "github.com/cocopon/vaffle.vim",
-      "version": "07647a485d9516033fc74e6c5f27b40cc5e4c3db"
+      "version": "717bd5a7d1e0f07d1b6b5a3d81968751c0659dd8"
     },
     {
       "type": "git",
       "path": "github.com/machakann/vim-sandwich",
-      "version": "5dd57dbf8ae1a95e7cefee8ec15ac81a4e0398bf"
+      "version": "35948af32203282ffd724f4ffac87af9c3efcf11"
     },
     {
       "type": "git",
       "path": "github.com/w0rp/ale",
-      "version": "2000436dfd7a25a8e9f66788c94bfb4512adda98"
+      "version": "a486aa1d24294c5b14c8b2763a3b5ffdc39d0739"
     },
     {
       "type": "git",
       "path": "github.com/leafgarland/typescript-vim",
-      "version": "0e9d92eead2df21abe342c4341c55536dd36b0af"
+      "version": "5a319ea5504e18215d155576c78d1b7fb8e22c8f"
     },
     {
       "type": "git",
       "path": "github.com/digitaltoad/vim-pug",
-      "version": "3f341b48e46a84891e19d449a5e336bcfc5a57a0"
+      "version": "ea39cd942cf3194230cf72bfb838901a5344d3b3"
     },
     {
       "type": "git",
       "path": "github.com/Shougo/context_filetype.vim",
-      "version": "5392e3f0f3ff82b7149818a5700680f4bbcfea45"
+      "version": "9d495ce4ddfdae8f0b268fcec3a7a5e0062456e8"
     },
     {
       "type": "git",
       "path": "github.com/osyo-manga/vim-precious",
-      "version": "1f0900cda9c58e2275df169bf023f427f09f3de5"
+      "version": "01aaf030cbd2e374ca5659148e395aab2d35bffc"
     },
     {
       "type": "git",
       "path": "github.com/cocopon/iceberg.vim",
-      "version": "0a18b0fbfdcdace35ee7ff4397ab6932d6dae1da"
+      "version": "ddc3e4ea485771e4f0b939fd8259f3152eb1bd29"
     },
     {
       "type": "git",
       "path": "github.com/ctrlpvim/ctrlp.vim",
-      "version": "ebc568c3992d9002d1d35b85737dfa0d9ce70d9f"
+      "version": "6bca8770a04c099e8c6ec7c7ea58cf9a17c8e44d"
     },
     {
       "type": "git",
@@ -114,18 +114,18 @@
     },
     {
       "type": "git",
-      "path": "github.com/rcmdnk/vim-markdown",
-      "version": "7cf3110578a084ddf57d97e9abd1ac3d2f28c63d"
-    },
-    {
-      "type": "git",
       "path": "github.com/lilydjwg/colorizer",
       "version": "afc1491e5b9c36305ce710bdad2b48f069141183"
     },
     {
       "type": "git",
       "path": "github.com/previm/previm",
-      "version": "a7548557f3e9bb90ba1697f059c5b6895ff13454"
+      "version": "5775e97de90d7fbcf8a231a08afbb400d9b64af1"
+    },
+    {
+      "type": "git",
+      "path": "github.com/cohama/vim-insert-linenr",
+      "version": "1574704584af7ab041bf3e8ec4b347591fab0135"
     }
   ],
   "profiles": [
@@ -154,9 +154,9 @@
         "github.com/LeafCage/yankround.vim",
         "localhost/local/post-config",
         "github.com/osyo-manga/vim-precious",
-        "github.com/rcmdnk/vim-markdown",
         "github.com/lilydjwg/colorizer",
-        "github.com/previm/previm"
+        "github.com/previm/previm",
+        "github.com/cohama/vim-insert-linenr"
       ]
     }
   ]

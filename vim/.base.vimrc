@@ -202,50 +202,6 @@ aug CD
 aug END
 
 "---------------------------------------------------------------------------
-" プラグイン的な動作
-" insertmode時、statuslineの色を変更
-"
-if !exists('g:hi_insert_statusline')
-  let g:hi_insert_statusline = 'highlight StatusLine guifg=white guibg=darkcyan gui=none ctermfg=white ctermbg=darkcyan cterm=none'
-endif
-if !exists('g:hi_insert_linenr')
-  let g:hi_insert_linenr = 'highlight LineNr ctermfg=67 guifg=#747bA1'
-endif
-
-if has('syntax')
-  augroup InsertHook
-    autocmd!
-    autocmd InsertEnter * call s:StatusLine('Enter')
-    autocmd InsertLeave * call s:StatusLine('Leave')
-  augroup END
-endif
-
-let s:slhlcmd = ''
-let s:lnnrhlcmd = ''
-function! s:StatusLine(mode)
-  if a:mode == 'Enter'
-    silent! let s:slhlcmd = 'highlight ' . s:GetHighlight('StatusLine')
-    silent! let s:lnnrhlcmd = 'highlight ' . s:GetHighlight('LineNr')
-    silent exec g:hi_insert_statusline
-    silent exec g:hi_insert_linenr
-  else
-    highlight clear StatusLine
-    silent exec s:slhlcmd
-    highlight clear LineNr
-    silent exec s:lnnrhlcmd
-  endif
-endfunction
-
-function! s:GetHighlight(hi)
-  redir => hl
-  exec 'highlight '.a:hi
-  redir END
-  let hl = substitute(hl, '[\r\n]', '', 'g')
-  let hl = substitute(hl, 'xxx', '', '')
-  return hl
-endfunction
-
-"---------------------------------------------------------------------------
 " プラグインを有効にする (決まり文句)
 "
 filetype plugin indent on 
