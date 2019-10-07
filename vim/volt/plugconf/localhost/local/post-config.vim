@@ -1,4 +1,6 @@
 function! s:on_load_pre()
+  colorscheme iceberg
+
   """"""""""""""""""""""""""""""
   " submode
   """"""""""""""""""""""""""""""
@@ -61,6 +63,7 @@ endfunction
 
 function! s:depends()
   return [
+  \  'github.com/cocopon/iceberg.vim',
   \  'github.com/tyru/open-browser.vim',
   \  'github.com/ctrlpvim/ctrlp.vim',
   \  'github.com/sgur/ctrlp-memolist.vim',
