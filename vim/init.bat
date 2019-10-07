@@ -24,6 +24,7 @@ echo "---------------------------------------------"
 echo " 各rcファイルのsymbolic linkを作成します。"
 echo "---------------------------------------------"
 mklink .vimrc %CURRENT_PATH%\.vimrc
+mklink .gvimrc %CURRENT_PATH%\.gvimrc
 
 cd .vim
 mklink .base.vimrc %CURRENT_PATH%\.base.vimrc
