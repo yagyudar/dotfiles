@@ -1,10 +1,5 @@
 function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
-  augroup MyVaffleSetting
-    autocmd!
-    autocmd FileType vaffle nmap <buffer> l <Plug>(vaffle-open-selected)
-    autocmd FileType vaffle nmap <buffer> <CR> <Plug>(vaffle-open-selected)
-  augroup END
 endfunction
 
 function! s:on_load_post()

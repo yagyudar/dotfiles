@@ -4,78 +4,8 @@
   "repos": [
     {
       "type": "git",
-      "path": "github.com/thinca/vim-zenspace",
-      "version": "1f620052a7c85752fd06110098383b1f0c564f1c"
-    },
-    {
-      "type": "git",
-      "path": "github.com/kana/vim-submode",
-      "version": "d29de4f55c40a7a03af1d8134453a703d6affbd2"
-    },
-    {
-      "type": "git",
-      "path": "github.com/tyru/open-browser.vim",
-      "version": "b900ff9d39bb36891704bd0fe76737ee3a7ac2b9"
-    },
-    {
-      "type": "git",
-      "path": "github.com/haya14busa/vim-asterisk",
-      "version": "7cf0d8f379babbdbf538aefe3af444ac4ba21dce"
-    },
-    {
-      "type": "git",
-      "path": "github.com/h1mesuke/vim-alignta",
-      "version": "cb3d593c48d7d3aef829b5aff49ddade24417a9f"
-    },
-    {
-      "type": "git",
-      "path": "github.com/glidenote/memolist.vim",
-      "version": "7c4712562bae523b90b82a46b8975ed41460585f"
-    },
-    {
-      "type": "git",
-      "path": "github.com/itchyny/vim-cursorword",
-      "version": "c35c5e686769db02bb9ccf30cc21fc13786f7f14"
-    },
-    {
-      "type": "git",
-      "path": "github.com/nathanaelkane/vim-indent-guides",
-      "version": "54d889a63716ee2f1818aa2ec5082db47147147b"
-    },
-    {
-      "type": "git",
-      "path": "github.com/t9md/vim-quickhl",
-      "version": "c6031afb874cea4fb7796be6a120624d0e073d65"
-    },
-    {
-      "type": "git",
-      "path": "github.com/kana/vim-textobj-user",
-      "version": "074ce2575543f790290b189860597a3dcac1f79d"
-    },
-    {
-      "type": "git",
-      "path": "github.com/cocopon/vaffle.vim",
-      "version": "717bd5a7d1e0f07d1b6b5a3d81968751c0659dd8"
-    },
-    {
-      "type": "git",
-      "path": "github.com/machakann/vim-sandwich",
-      "version": "35948af32203282ffd724f4ffac87af9c3efcf11"
-    },
-    {
-      "type": "git",
-      "path": "github.com/w0rp/ale",
-      "version": "a486aa1d24294c5b14c8b2763a3b5ffdc39d0739"
-    },
-    {
-      "type": "git",
-      "path": "github.com/leafgarland/typescript-vim",
-      "version": "5a319ea5504e18215d155576c78d1b7fb8e22c8f"
-    },
-    {
-      "type": "git",
-      "path": "github.com/digitaltoad/vim-pug",
-      "version": "ea39cd942cf3194230cf72bfb838901a5344d3b3"
+      "path": "github.com/LeafCage/yankround.vim",
+      "version": "9dca96ed35b09de9fe5474de40da323d75fa3204"
     },
     {
       "type": "git",
@@ -84,33 +14,63 @@
     },
     {
       "type": "git",
-      "path": "github.com/osyo-manga/vim-precious",
-      "version": "01aaf030cbd2e374ca5659148e395aab2d35bffc"
+      "path": "github.com/cocopon/iceberg.vim",
+      "version": "dc4b4b5838d126c22c44229a3ee170f6ac79ba86"
     },
     {
       "type": "git",
-      "path": "github.com/cocopon/iceberg.vim",
-      "version": "ddc3e4ea485771e4f0b939fd8259f3152eb1bd29"
+      "path": "github.com/cocopon/vaffle.vim",
+      "version": "6bdaba0a60fc337fa9e161b80962d4f1e979163c"
+    },
+    {
+      "type": "git",
+      "path": "github.com/cohama/vim-insert-linenr",
+      "version": "1574704584af7ab041bf3e8ec4b347591fab0135"
     },
     {
       "type": "git",
       "path": "github.com/ctrlpvim/ctrlp.vim",
-      "version": "6bca8770a04c099e8c6ec7c7ea58cf9a17c8e44d"
+      "version": "44c8e24956d7dcfee3ee6083a0573fed31d136ed"
     },
     {
       "type": "git",
-      "path": "github.com/sgur/ctrlp-memolist.vim",
-      "version": "4bc1818d7a400880e1ffc3fd2720d8660bccbf95"
+      "path": "github.com/digitaltoad/vim-pug",
+      "version": "ea39cd942cf3194230cf72bfb838901a5344d3b3"
     },
     {
       "type": "git",
-      "path": "github.com/LeafCage/yankround.vim",
-      "version": "9dca96ed35b09de9fe5474de40da323d75fa3204"
+      "path": "github.com/glidenote/memolist.vim",
+      "version": "da76c3050a2d62943a50f1167604e9ae4026351d"
     },
     {
-      "type": "static",
-      "path": "localhost/local/post-config",
-      "version": ""
+      "type": "git",
+      "path": "github.com/h1mesuke/vim-alignta",
+      "version": "cb3d593c48d7d3aef829b5aff49ddade24417a9f"
+    },
+    {
+      "type": "git",
+      "path": "github.com/haya14busa/vim-asterisk",
+      "version": "7cf0d8f379babbdbf538aefe3af444ac4ba21dce"
+    },
+    {
+      "type": "git",
+      "path": "github.com/itchyny/vim-cursorword",
+      "version": "c35c5e686769db02bb9ccf30cc21fc13786f7f14"
+    },
+    {
+      "type": "git",
+      "path": "github.com/kana/vim-submode",
+      "version": "d29de4f55c40a7a03af1d8134453a703d6affbd2"
+    },
+    {
+      "type": "git",
+      "path": "github.com/kana/vim-textobj-user",
+      "version": "9861dc6829a0ce253e40b4d947a9432b58eb499b"
+    },
+    {
+      "type": "git",
+      "path": "github.com/leafgarland/typescript-vim",
+      "version": "5a319ea5504e18215d155576c78d1b7fb8e22c8f"
     },
     {
       "type": "git",
@@ -119,44 +79,84 @@
     },
     {
       "type": "git",
-      "path": "github.com/previm/previm",
-      "version": "5775e97de90d7fbcf8a231a08afbb400d9b64af1"
+      "path": "github.com/machakann/vim-sandwich",
+      "version": "3a2301ec4b47a9ddbf29f0e54653b36017175efe"
     },
     {
       "type": "git",
-      "path": "github.com/cohama/vim-insert-linenr",
-      "version": "1574704584af7ab041bf3e8ec4b347591fab0135"
+      "path": "github.com/nathanaelkane/vim-indent-guides",
+      "version": "54d889a63716ee2f1818aa2ec5082db47147147b"
+    },
+    {
+      "type": "git",
+      "path": "github.com/osyo-manga/vim-precious",
+      "version": "01aaf030cbd2e374ca5659148e395aab2d35bffc"
+    },
+    {
+      "type": "git",
+      "path": "github.com/previm/previm",
+      "version": "e748e987fd2221018940a7a87a12d697ca28a39d"
+    },
+    {
+      "type": "git",
+      "path": "github.com/sgur/ctrlp-memolist.vim",
+      "version": "4bc1818d7a400880e1ffc3fd2720d8660bccbf95"
+    },
+    {
+      "type": "git",
+      "path": "github.com/t9md/vim-quickhl",
+      "version": "74732aabe71b980a92bf1a721353a9105ffec168"
+    },
+    {
+      "type": "git",
+      "path": "github.com/thinca/vim-zenspace",
+      "version": "1f620052a7c85752fd06110098383b1f0c564f1c"
+    },
+    {
+      "type": "git",
+      "path": "github.com/tyru/open-browser.vim",
+      "version": "b900ff9d39bb36891704bd0fe76737ee3a7ac2b9"
+    },
+    {
+      "type": "git",
+      "path": "github.com/w0rp/ale",
+      "version": "db6b1b5ecc17558f87f55b159f90ebf36677b6b3"
+    },
+    {
+      "type": "static",
+      "path": "localhost/local/post-config",
+      "version": ""
     }
   ],
   "profiles": [
     {
       "name": "default",
       "repos_path": [
-        "github.com/thinca/vim-zenspace",
-        "github.com/kana/vim-submode",
-        "github.com/tyru/open-browser.vim",
-        "github.com/haya14busa/vim-asterisk",
-        "github.com/h1mesuke/vim-alignta",
-        "github.com/glidenote/memolist.vim",
-        "github.com/itchyny/vim-cursorword",
-        "github.com/nathanaelkane/vim-indent-guides",
-        "github.com/t9md/vim-quickhl",
-        "github.com/kana/vim-textobj-user",
-        "github.com/cocopon/vaffle.vim",
-        "github.com/machakann/vim-sandwich",
-        "github.com/w0rp/ale",
-        "github.com/leafgarland/typescript-vim",
-        "github.com/digitaltoad/vim-pug",
+        "github.com/LeafCage/yankround.vim",
         "github.com/Shougo/context_filetype.vim",
         "github.com/cocopon/iceberg.vim",
+        "github.com/cocopon/vaffle.vim",
+        "github.com/cohama/vim-insert-linenr",
         "github.com/ctrlpvim/ctrlp.vim",
-        "github.com/sgur/ctrlp-memolist.vim",
-        "github.com/LeafCage/yankround.vim",
-        "localhost/local/post-config",
-        "github.com/osyo-manga/vim-precious",
+        "github.com/digitaltoad/vim-pug",
+        "github.com/glidenote/memolist.vim",
+        "github.com/h1mesuke/vim-alignta",
+        "github.com/haya14busa/vim-asterisk",
+        "github.com/itchyny/vim-cursorword",
+        "github.com/kana/vim-submode",
+        "github.com/kana/vim-textobj-user",
+        "github.com/leafgarland/typescript-vim",
         "github.com/lilydjwg/colorizer",
+        "github.com/machakann/vim-sandwich",
+        "github.com/nathanaelkane/vim-indent-guides",
+        "github.com/osyo-manga/vim-precious",
         "github.com/previm/previm",
-        "github.com/cohama/vim-insert-linenr"
+        "github.com/sgur/ctrlp-memolist.vim",
+        "github.com/t9md/vim-quickhl",
+        "github.com/thinca/vim-zenspace",
+        "github.com/tyru/open-browser.vim",
+        "github.com/w0rp/ale",
+        "localhost/local/post-config"
       ]
     }
   ]
