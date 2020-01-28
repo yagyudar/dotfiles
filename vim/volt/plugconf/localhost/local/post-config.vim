@@ -40,7 +40,6 @@ function! s:on_load_pre()
   nmap [superleader]b [ctrlp]b
   nmap [superleader]c [ctrlp]x
   nmap [superleader]m [ctrlp]m
-  nmap [superleader]n [memolist]
   nmap [superleader]s [terminal]s
   nmap [superleader]t [terminal]t
   nmap [superleader]: q:
@@ -66,8 +65,6 @@ function! s:depends()
   \  'github.com/cocopon/iceberg.vim',
   \  'github.com/tyru/open-browser.vim',
   \  'github.com/ctrlpvim/ctrlp.vim',
-  \  'github.com/sgur/ctrlp-memolist.vim',
-  \  'github.com/glidenote/memolist.vim',
   \  'github.com/t9md/vim-quickhl'
   \]
 endfunction
