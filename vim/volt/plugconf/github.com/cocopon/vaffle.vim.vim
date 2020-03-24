@@ -1,5 +1,6 @@
 function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
+  let g:vaffle_show_hidden_files = 1
 endfunction
 
 function! s:on_load_post()

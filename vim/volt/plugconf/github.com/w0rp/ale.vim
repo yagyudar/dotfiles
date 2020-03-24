@@ -1,10 +1,12 @@
 function! s:on_load_pre()
   " Plugin configuration like the code written in vimrc.
   let g:ale_linters = {
+  \   'java': ['checkstyle'],
   \   'javascript': ['eslint'],
   \   'typescript': ['eslint'],
   \   'css': ['stylelint'],
   \}
+  let g:ale_java_checkstyle_config = '$HOME/work/common/sun_checks.xml'
   let g:ale_sign_error = 'E'
   let g:ale_sign_warning = 'W'
   let g:ale_maximum_file_size = 500000
