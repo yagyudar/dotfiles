@@ -10,17 +10,17 @@
     {
       "type": "git",
       "path": "github.com/Shougo/context_filetype.vim",
-      "version": "f200fe69939089da9e61bd9a3ff75b4ef7adc708"
+      "version": "cf25d744ac35872364c49fac3cb6a546e8af92ce"
     },
     {
       "type": "git",
       "path": "github.com/cocopon/iceberg.vim",
-      "version": "1740235846c92666fe521e550a27fa47ebe5f5a3"
+      "version": "203d56849325fb0420587c9951859a755798aea3"
     },
     {
       "type": "git",
       "path": "github.com/cocopon/vaffle.vim",
-      "version": "7b637cf10e301df22da317aa8f22b00c4bf30339"
+      "version": "0a314644c38402b659482568525b1303f7d0e01d"
     },
     {
       "type": "git",
@@ -30,17 +30,12 @@
     {
       "type": "git",
       "path": "github.com/ctrlpvim/ctrlp.vim",
-      "version": "585143acbe15f362852d78bd050baff3c12902d7"
+      "version": "971c4d41880b72dbbf1620b3ad91418a6a6f6b9c"
     },
     {
       "type": "git",
       "path": "github.com/digitaltoad/vim-pug",
       "version": "ea39cd942cf3194230cf72bfb838901a5344d3b3"
-    },
-    {
-      "type": "git",
-      "path": "github.com/h1mesuke/vim-alignta",
-      "version": "cb3d593c48d7d3aef829b5aff49ddade24417a9f"
     },
     {
       "type": "git",
@@ -50,7 +45,12 @@
     {
       "type": "git",
       "path": "github.com/itchyny/vim-cursorword",
-      "version": "b5f8a4b148b566626210d0c1f6b63036b62322bb"
+      "version": "cc8114226ceefb5cafe1890e0900d3efb7dab1fd"
+    },
+    {
+      "type": "git",
+      "path": "github.com/junegunn/vim-easy-align",
+      "version": "12dd6316974f71ce333e360c0260b4e1f81169c3"
     },
     {
       "type": "git",
@@ -65,17 +65,17 @@
     {
       "type": "git",
       "path": "github.com/leafgarland/typescript-vim",
-      "version": "17d85d8051ba21283e62a9101734981e10b732fd"
+      "version": "9f247d7693cd12171239c56c355ba863f559f424"
     },
     {
       "type": "git",
       "path": "github.com/lilydjwg/colorizer",
-      "version": "afc1491e5b9c36305ce710bdad2b48f069141183"
+      "version": "1ddc68adbf45331158c61507a55fcc918bb61654"
     },
     {
       "type": "git",
       "path": "github.com/machakann/vim-sandwich",
-      "version": "02e3b6d1ff9ce346c115166855137b318b63c536"
+      "version": "f0bb324395bf6e00ec17fc7af60d2ccb8d494595"
     },
     {
       "type": "git",
@@ -90,32 +90,32 @@
     {
       "type": "git",
       "path": "github.com/previm/previm",
-      "version": "d405a3c2bf3bd69d947fd1ed0a485e44ea77e91d"
+      "version": "d29cce267e0114ff852167c6fbf35b220dba764c"
     },
     {
       "type": "git",
       "path": "github.com/t9md/vim-quickhl",
-      "version": "9df53aacbff2709049b787109102b45163190c82"
+      "version": "b63d478a7860dded6a6b675a0bdd891c022f1027"
     },
     {
       "type": "git",
       "path": "github.com/thinca/vim-zenspace",
-      "version": "1f620052a7c85752fd06110098383b1f0c564f1c"
+      "version": "19ed877e6784edd1884789334872381493486883"
     },
     {
       "type": "git",
       "path": "github.com/tyru/open-browser.vim",
-      "version": "57b894d0aa5f800220d25fdeeccf28d8a7f6ac89"
+      "version": "d6f1784685abdd86500fdb5fa2fbaf2aab833f18"
     },
     {
       "type": "git",
       "path": "github.com/unblevable/quick-scope",
-      "version": "49b00ee08176636384c98690a4719565372f68b9"
+      "version": "64a5e6f9791e75f4d87b176d5c11f31041aa4169"
     },
     {
       "type": "git",
       "path": "github.com/w0rp/ale",
-      "version": "bbe5153fcb36dec9860ced33ae8ff0b5d76ac02a"
+      "version": "03b6978a270107b670b0363d50f3eed4b365ba26"
     },
     {
       "type": "git",
@@ -139,9 +139,9 @@
         "github.com/cohama/vim-insert-linenr",
         "github.com/ctrlpvim/ctrlp.vim",
         "github.com/digitaltoad/vim-pug",
-        "github.com/h1mesuke/vim-alignta",
         "github.com/haya14busa/vim-asterisk",
         "github.com/itchyny/vim-cursorword",
+        "github.com/junegunn/vim-easy-align",
         "github.com/kana/vim-submode",
         "github.com/kana/vim-textobj-user",
         "github.com/leafgarland/typescript-vim",
