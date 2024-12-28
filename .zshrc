@@ -179,3 +179,5 @@ fi
 # ローカルのzshrcが存在すれば読み込む
 # 参考: http://qiita.com/awakia/items/1d5cd440ce58ef4fb8ae
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
